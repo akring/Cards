@@ -162,7 +162,10 @@ import UIKit
     
     override open func draw(_ rect: CGRect) {
         super.draw(rect)
-        originalFrame = rect
+        
+        if originalFrame == .zero {
+            originalFrame = rect
+        }
         
         self.layer.shadowOpacity = shadowOpacity
         self.layer.shadowColor = shadowColor.cgColor

@@ -98,8 +98,8 @@ class Animator: NSObject, UIViewControllerAnimatedTransitioning {
         // Layout with bounce effect
         UIView.animate(withDuration: velocity/2, delay: 0, options: .curveEaseOut, animations: {
             
-            detailVC.layout(detailVC.view.frame, isPresenting: true, transform: bounce)
-            self.card.delegate?.cardIsShowingDetail?(card: self.card)
+//            detailVC.layout(detailVC.view.frame, isPresenting: true, transform: bounce)
+//            self.card.delegate?.cardIsShowingDetail?(card: self.card)
             
         }) { _ in UIView.animate(withDuration: self.velocity/2, delay: 0, options: .curveEaseOut, animations: {
                 
